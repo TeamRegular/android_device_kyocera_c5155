@@ -46,7 +46,6 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_UMS_LUNFILE := "/sys/devices/platform/msm_hsusb/gadget/lun0/file"
-TARGET_RECOVERY_INITRC := device/kyocera/c5155/recovery/init.rc
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_EXT4 := true
 

@@ -1,0 +1,12 @@
+on init
+ export PATH /sbin:/system/bin
+ export LD_LIBRARY_PATH .:/sbin
+
+on boot
+
+service rmt_storage /sbin/rmt_storage
+    user root
+    disabled
+
+on property:ro.emmc=1
+    start rmt_storage

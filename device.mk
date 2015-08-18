@@ -30,4 +30,5 @@ PRODUCT_COPY_FILES += \
     device/kyocera/c5155/recovery/system/lib/libcutils.so:recovery/root/system/lib/libcutils.so \
     device/kyocera/c5155/recovery/system/lib/liblog.so:recovery/root/system/lib/liblog.so \
     device/kyocera/c5155/recovery/system/lib/libm.so:recovery/root/system/lib/libm.so \
-    device/kyocera/c5155/recovery/system/lib/libstdc++.so:recovery/root/system/lib/libstdc++.so
+    device/kyocera/c5155/recovery/system/lib/libstdc++.so:recovery/root/system/lib/libstdc++.so \
+    device/kyocera/c5155/recovery/init.recovery.qcom.rc:root/init.recovery.qcom.rc
