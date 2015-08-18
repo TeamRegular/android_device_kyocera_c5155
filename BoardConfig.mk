@@ -20,7 +20,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Platform
 TARGET_BOARD_PLATFORM := msm7x30
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno205
 
 # Architecture
 TARGET_ARCH := arm
@@ -28,7 +28,6 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_ARCH_VARIANT_CPU := cortex-a8
 TARGET_CPU_ABI  := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_SMP := true
 
 # Kernel
 TARGET_PREBUILT_KERNEL := device/kyocera/c5155/kernel
@@ -46,10 +45,12 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_UMS_LUNFILE := "/sys/devices/platform/msm_hsusb/gadget/lun0/file"
+TARGET_RECOVERY_INITRC := device/kyocera/c5155/recovery/init.rc
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Vold
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 BOARD_VOLD_MAX_PARTITIONS := 33
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/msm_hsusb/gadget/lun0/file"
